@@ -36,3 +36,6 @@ Just open `index.html` in your browser. No installation required.
 
 ## 📄 License
 This project is licensed under the MIT License.
+
+> ⚠️ This is a learning project recreated by following [HTML & CSS Full Course - Beginner to Pro/(https://www.youtube.com/watch?v=G3e-cpL7ofc&t=22280s)]. All credit goes to the original creator.
+
