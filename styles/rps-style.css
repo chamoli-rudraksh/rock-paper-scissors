@@ -1,60 +1,77 @@
-.body{
-    background-color: rgb(25,25,25);
-
+body {
+    background: linear-gradient(135deg, #1a1a1a, #292929);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
 }
-.rock-paper-scissors-text{
-    color:white;
-    text-shadow: 2px 2px rgb(97, 102, 97,0.5);
+
+.rock-paper-scissors-text {
+    color: #00ffcc;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 40px;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+    letter-spacing: 1px;
+}
+
+.game-buttons {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #00ffcc;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 255, 204, 0.3);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.game-buttons:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.6);
+}
+
+.move-icon {
+    height: 48px;
+    filter: drop-shadow(1px 1px 2px #00ffcc);
+}
+
+.reset-button,
+.autoplay-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
     font-weight: bold;
-    font-size: x-large;
-    margin-top: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-
+    color: #1a1a1a;
+    background-color: #00ffcc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-.game-buttons{
-    width:120px;
-    box-shadow:10px 10px 10px rgba(128, 128, 128, 0.1) ;
-    height: 120px;
-    border-radius: 60px;
-    border:3px solid white;
+.reset-button:hover,
+.autoplay-button:hover {
+    background-color: #00ddb3;
+}
+
+.score {
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 18px;
     background-color: transparent;
-    margin-right: 10px;
-    cursor: pointer;
+    padding: 10px;
 }
 
-.move-icon{
-    height: 50px;
-
-}
-
-.reset-button{
-    
-    cursor: pointer;
-    font-size: 15px;
-    padding: 8px 15px;
-    border:none;
-   
-}
-
-.score{
-    margin-top: 60px;
-    background-color: rgb(25, 25, 25);
-    color: white;
-    font-family: Arial;
-}
-.result{
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 50px;
-    background-color: rgb(25, 25, 25);
-    color: white;
-    font-family: Arial;
-}
-.autoplay-button{
-    cursor: pointer;
-    font-size: 15px;
-    padding: 8px 15px;
-    border:none;
-    margin-left:10px;
+.result {
+    font-size: 22px;
+    color: #00ffcc;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.3);
 }
